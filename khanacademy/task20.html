@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Night</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0a0f2c;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            background-color: #000b25;
+            padding: 20px;
+        }
+
+        #main-tag {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .left {
+            width: 70%;
+            background-color: darkblue;
+            padding: 20px;
+        }
+
+        .right {
+            width: 30%;
+            background-color: #020c3a;
+            padding: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1e90ff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #63b3ff;
+        }
+        .details {
+            background-color: #000b25;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .details h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+        }
+        .content li{
+            font-size: 40px;
+        }
+        .organizers {
+            background-color: #000b25;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .organizers h3 {
+            text-align: center;
+        }
+
+        .organizers p {
+            max-width: 1000px;
+            margin: 10px auto;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .schedule-item {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .game-name {
+            font-weight: bold;
+        }
+
+        .game-time {
+            color: #63b3ff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1 id = "main-tag">KBTU students tournament</h1>
+</div>
+<div class="content">
+    <div class="left">
+        <h3>Types of tournament that will be</h3>
+        <ul>
+            <li> <img src="https://preview.redd.it/1s0j5e4fhws01.png?auto=webp&s=af1a17c3f935e22d1cbf6aecc983d8626c15b590" alt="counter strike logo" width = "40">Counter-Strike 2</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHRH5mDQLHYVXpCi_O8FwARbk6_Xi5IwCEQ&s" width="40">Dota 2</li>
+            <li><img src = "https://yt3.googleusercontent.com/Pj9SLzbMxgdbgFSA5MgfTZXjnoRtAj5qUGP8ubjf8AEJpy2nzWLR9Ik__iwQa44bPdvNw5jv5A=s900-c-k-c0x00ffffff-no-rj" alt="clash royale logo" width = "40">Clash Royale</li>
+
+        </ul>
+    </div>
+    <div class="details">
+        <h2>Tournament formats</h2>
+
+        <p><b>Counter-Strike 2:</b> 5v5, single elimination, BO1 matches.</p>
+        <p><b>Dota 2:</b> 5v5, double elimination, BO1, final — BO3.</p>
+        <p><b>Clash Royale:</b> 1v1, Swiss system, best of 3.</p>
+    </div>
+
+    <div class="right">
+        <h3>Info</h3>
+        <button>Join</button>
+        <button> Organizers</button>
+        <button>Schedule</button>
+    </div>
+</div>
+<div class="organizers">
+    <h3 id="organizers">Organizers</h3>
+    <p>This tournament is hosted by the KBTU Student IT Club with support from the Faculty of Computer Technology.
+        The main goal is to bring together students who are passionate about esports, help them connect with each other, and organize friendly competitions between teams.</p>
+
+    <h3>Schedule</h3>
+    <ul>
+        <li class="schedule-item">
+            <span class="game-name">Counter-Strike 2</span>
+            <span class="game-time">Start: 11:00 AM End: 2:00 PM Break: 12:30–1:00 PM</span>
+        </li>
+        <li class="schedule-item">
+            <span class="game-name">Dota 2</span>
+            <span class="game-time">Start: 2:30 PM End: 5:30 PM Break: 4:00–4:30 PM</span>
+        </li>
+        <li class="schedule-item">
+            <span class="game-name">Clash Royale</span>
+            <span class="game-time">Start: 6:00 PM End: 8:00 PM</span>
+        </li>
+    </ul>
+
+
+</div>
+</body>
+</html>
