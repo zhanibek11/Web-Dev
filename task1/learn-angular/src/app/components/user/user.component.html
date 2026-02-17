@@ -1,0 +1,8 @@
+<div class="user-card" (click)="select()">
+  <div class="user-info">
+    <span class="user-name">{{ user.name }}</span>
+    <span class="user-city">{{ user.city }}</span>
+  </div>
+  <span *ngIf="user.isActive" class="badge active">Активен</span>
+  <span *ngIf="!user.isActive" class="badge inactive">Неактивен</span>
+</div>
