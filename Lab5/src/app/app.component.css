@@ -1,0 +1,48 @@
+.app-header {
+  background: #e31e24;
+  padding: 16px 24px;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.categories {
+  display: flex;
+  gap: 12px;
+  padding: 20px 24px;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.cat-btn {
+  padding: 10px 22px;
+  border: 2px solid #e31e24;
+  border-radius: 24px;
+  background: white;
+  color: #e31e24;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-btn:hover,
+.cat-btn.active {
+  background: #e31e24;
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  padding: 80px 16px;
+  color: #aaa;
+}
+
+.welcome h2 {
+  font-size: 28px;
+  color: #444;
+}

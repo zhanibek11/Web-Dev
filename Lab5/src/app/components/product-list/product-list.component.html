@@ -1,0 +1,16 @@
+<div *ngIf="products.length > 0; else empty">
+    <div class="list-header">
+        <p>{{ products.length }} товаров</p>
+    </div>
+    <div class="product-grid">
+        <app-product-card
+                *ngFor="let product of products"
+                [product]="product"
+                (delete)="onDelete($event)"
+        ></app-product-card>
+    </div>
+</div>
+
+<ng-template #empty>
+    <div class="empty-msg">Нет товаров в этой категории</div>
+</ng-template>
