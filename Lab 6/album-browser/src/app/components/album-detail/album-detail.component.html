@@ -1,0 +1,17 @@
+<p *ngIf="loading">Загрузка...</p>
+
+<div *ngIf="!loading && album">
+  <h1>Альбом #{{ album.id }}</h1>
+  <p>Пользователь: {{ album.userId }}</p>
+
+  <div class="edit">
+    <input [(ngModel)]="editTitle" type="text" />
+    <button (click)="saveAlbum()">Сохранить</button>
+    <span *ngIf="saved" class="ok">✓ Сохранено</span>
+  </div>
+
+  <div class="btns">
+    <button (click)="viewPhotos()">Фотографии</button>
+    <button class="gray" (click)="goBack()">Назад</button>
+  </div>
+</div>

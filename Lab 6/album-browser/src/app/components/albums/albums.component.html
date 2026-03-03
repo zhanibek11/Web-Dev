@@ -1,0 +1,11 @@
+<h1>Альбомы</h1>
+
+<p *ngIf="loading">Загрузка...</p>
+
+<ul *ngIf="!loading">
+  <li *ngFor="let album of albums" (click)="goToDetail(album.id)">
+    <span class="num">{{ album.id }}</span>
+    <span class="title">{{ album.title }}</span>
+    <button (click)="deleteAlbum(album.id, $event)">Удалить</button>
+  </li>
+</ul>

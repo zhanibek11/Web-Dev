@@ -1,0 +1,32 @@
+nav {
+  background: #f9c400;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: auto;
+}
+
+nav a {
+  color: #333;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
