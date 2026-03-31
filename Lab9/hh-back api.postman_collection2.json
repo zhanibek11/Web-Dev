@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "ae048d7e-f89a-4044-a925-221ef5d64200",
+		"name": "hh-back api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43788184"
+	},
+	"item": [
+		{
+			"name": "Get all companies",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 06 Apr 2025 02:18:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "316"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Kaspi.kz\",\n        \"address\": \"Tole bi 3\",\n        \"description\": \"Хорошая компания\",\n        \"city\": \"Алматы\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Kolesa.kz\",\n        \"address\": \"Auezova 25\",\n        \"description\": \"Sell cars\",\n        \"city\": \"Almaty\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Top-ten vacancies",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vacancies/top_ten",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vacancies",
+								"top_ten"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 06 Apr 2025 02:17:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Janitor\",\n        \"company\": \"Kolesa.kz\",\n        \"salary\": 10000000,\n        \"description\": \"MOEM POLY\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Full-Stack Developer\",\n        \"company\": \"Kaspi.kz\",\n        \"salary\": 500000,\n        \"description\": \"React.js\\r\\nJS\\r\\nTypeScript\\r\\nNode.js\\r\\nCSS/HTML\\r\\nCI/CD\\r\\nPostgreSQL\"\n    }\n]"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vacancies/top_ten",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vacancies",
+								"top_ten"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 06 Apr 2025 02:17:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Janitor\",\n        \"company\": \"Kolesa.kz\",\n        \"salary\": 10000000,\n        \"description\": \"MOEM POLY\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Full-Stack Developer\",\n        \"company\": \"Kaspi.kz\",\n        \"salary\": 500000,\n        \"description\": \"React.js\\r\\nJS\\r\\nTypeScript\\r\\nNode.js\\r\\nCSS/HTML\\r\\nCI/CD\\r\\nPostgreSQL\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get all vacancies",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vacancies/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vacancies",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 06 Apr 2025 02:18:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Full-Stack Developer\",\n        \"company\": \"Kaspi.kz\",\n        \"salary\": 500000,\n        \"description\": \"React.js\\r\\nJS\\r\\nTypeScript\\r\\nNode.js\\r\\nCSS/HTML\\r\\nCI/CD\\r\\nPostgreSQL\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Janitor\",\n        \"company\": \"Kolesa.kz\",\n        \"salary\": 10000000,\n        \"description\": \"MOEM POLY\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
