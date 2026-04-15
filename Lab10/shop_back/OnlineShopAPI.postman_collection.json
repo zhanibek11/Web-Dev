@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+		"name": "Online Shop API",
+		"description": "API collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products by Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/1/products/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"New Category\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Category Name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/categories/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/products/?search=iPhone&ordering=-price",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "iPhone",
+									"description": "Search by name or description"
+								},
+								{
+									"key": "ordering",
+									"value": "-price",
+									"description": "Order by price or name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/products/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Example Product\",\n    \"price\": 999.99,\n    \"description\": \"Product description\",\n    \"count\": 10,\n    \"is_active\": true,\n    \"category\": 1,\n    \"likes\": 0,\n    \"image\": \"https://example.com/image.png\",\n    \"images\": [],\n    \"link\": \"https://example.com\",\n    \"is_favourite\": false,\n    \"rating\": 4.5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost:8000}}/api/products/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Product Name\",\n    \"price\": 1050.00,\n    \"category\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost:8000}}/api/products/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost:8000}}/api/products/1/",
+							"host": [
+								"{{localhost:8000}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+        {
+            "name": "Search & Filter",
+            "item": [
+                {
+                    "name": "Search Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{localhost:8000}}/api/products/?search=phone",
+                            "host": [
+                                "{{localhost:8000}}"
+                            ],
+                            "path": [
+                                "api",
+                                "products",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "search",
+                                    "value": "phone",
+                                    "description": "Search by name or description"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Sort Products by Price",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{localhost:8000}}/api/products/?ordering=-price",
+                            "host": [
+                                "{{localhost:8000}}"
+                            ],
+                            "path": [
+                                "api",
+                                "products",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "ordering",
+                                    "value": "-price",
+                                    "description": "Order by price Descending"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+	],
+	"variable": [
+		{
+			"key": "localhost:8000",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
